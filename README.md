@@ -134,3 +134,44 @@ Abhaya/
 ├── .env.example             # Example frontend environment variables
 ├── .gitignore
 └── README.md
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v18+
+- npm v9+
+- Expo CLI: `npm install -g expo-cli`
+- Expo Go app on your phone (for testing)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/madanrajsagar/Abhaya.git
+cd Abhaya
+```
+
+### Frontend Setup
+
+```bash
+npm install
+cp .env.example .env
+# Open .env and fill in your keys
+npx expo start
+```
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+# Add your backend env variables to backend/.env
+npm run dev
+```
+
+### Environment Variables
+
+Copy `.env.example` to `.env` and fill in:
+- Firebase config keys
+- Cloudinary credentials
+- Backend API URL
